@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+  --primary-color-light: rgb(210, 226, 230);
+  --green: rgba(62, 221, 89, 0.671);
+  --green-darker: rgb(7, 161, 32);
+  --yellow: rgba(225, 240, 23, 0.493);
+  --yellow-darker: rgba(255, 238, 0, 0.959);
+  --red: rgba(226, 80, 61, 0.658);
+  --red-darker: rgba(255, 30, 0, 0.938);
+  --dark: rgb(0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container, h1 {
+  text-align: center;
+}
+
+.watch {
+  font-size: 45px;
+}
+
+.start {
+  color: var(--dark);
+  font-size: 20px;
+  padding: 20px;
+  background-color: var(--green);
+  border: none;
+  border-radius: 10px;
+  margin: 0 6px 0 6px;
+}
+
+.start:hover {
+  background-color: var(--green-darker);
+}
+
+.pause {
+  color: var(--dark);
+  font-size: 20px;
+  padding: 20px;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 10px;
+  margin: 0 6px 0 6px;
+}
+
+.pause:hover {
+  background-color: var(--yellow-darker);
+}
+
+.restart {
+  color: var(--dark);
+  font-size: 20px;
+  padding: 20px;
+  background-color: var(--red);
+  border: none;
+  border-radius: 10px;
+  margin: 0 6px 0 6px;
+}
+
+.restart:hover {
+  background-color: var(--red-darker);
+}
